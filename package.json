@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --ci",
     "start": "webpack serve --open",
     "build": "webpack",
     "test:e2e": "jest e2e",
