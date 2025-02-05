@@ -6,6 +6,7 @@ install:
 
 build_script:
   - npm run build
+  - ls -la dist
 
 test_script:
   - export DISPLAY=:99.0
@@ -24,4 +25,5 @@ deploy_script:
   - git config --global user.email "appveyor@ci.com"
   - git config --global user.name "Appveyor CI"
   - git remote set-url origin https://$GITHUB_TOKEN@github.com/simplespacej/credit-card-validator.git
+  - ls -la dist
   - npm run deploy
